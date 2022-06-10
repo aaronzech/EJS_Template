@@ -104,10 +104,10 @@ app.get('/comments',(req,res) =>{
 
 app.post('/comments',(req,res) =>{
    
-    const {username,comment} = req.body;
-    comments.push({username,comment});
-    //console.log(req.body);
-    res.send("it worked");
+    const {username,comment} = req.body; // Save form variables from body object
+    comments.push({username,comment}); // Add to comment array
+    //Redirect the user to main page
+    res.redirect('/comments');
 })
 
 app.get('/comments/new',(req,res) =>{
