@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <%-include('partials/nav')%>
+  <h1>Random Number: <%= rand %></h1>  
+  <% if(rand% 2 == 0){ %>
+    <h2>That is an even number</h2>
+ <% }else{%> <h2>This is an odd number</h2>
+  <%}%>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis neque consequuntur ad explicabo nostrum possimus, maxime dolores, natus aperiam id soluta reprehenderit asperiores totam architecto ducimus iste eaque quo minima!</p>
+</body>
+</html>
